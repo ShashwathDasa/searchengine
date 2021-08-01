@@ -1,0 +1,14 @@
+<html>
+   <head>
+      <title>Search Engine</title>
+      <link rel="stylesheet" href ="{{url_for('static', filename ='css/main.css') }}">
+   </head>
+   <body>
+      <h1>Search Engine</h1>
+      <form action = "http://localhost:5000/result" method = "post">
+         <p>Welcome to the search engine. This program searches for files in your system which contain the keyword you enter. Enter the appropriate filname below.</p>
+         <p><input type = "text" name = "nm" placeholder="Enter filename" /></p>
+         <p><input type = "submit" value = "Search" /></p>
+      </form>
+   </body>
+</html>

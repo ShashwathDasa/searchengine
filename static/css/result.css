@@ -1,0 +1,22 @@
+*{
+    font-size: 16px;
+    background-color: rgb(53, 53, 53);
+    color: rgb(231, 222, 222)
+}
+
+h1{
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: underline;
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+
+span{
+    font-size: 1.5rem;
+    text-decoration: underline;
+    color: aqua;
+}

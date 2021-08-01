@@ -1,0 +1,22 @@
+<html>
+   <head>
+      <title>Result</title>
+      <link rel="stylesheet" href ="{{url_for('static', filename ='css/result.css') }}">
+
+   </head>
+   <body>
+      <h1>Search Engine</h1>
+      
+      {% if name == '' %}
+      <p><h2>The file <span>{{file}}</span> does not exist</h2></p>
+      {% else %}
+      <h2>The file <span>{{name[0][0]}}</span> is found in the following locations:</h2>
+      {% for drive in name %}
+      
+      <ul>
+         <li>{{drive[1]}}</li>
+      </ul>
+      {% endfor %}
+      {% endif %}
+   </body>
+</html>
